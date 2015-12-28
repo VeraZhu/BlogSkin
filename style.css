@@ -1,16 +1,4 @@
 /**************************************************
-说明：
-1：我们建议你通过只改变css的方式来制作新的皮肤模板。当然，页面的部分代
-码你也是可以更改的，例如一些图片的地址。但是，请你在递交作品的时候，请同时
-提交对页面部分代码的修改备注和说明。以便我们了解。
-2：为了保证页面的兼容性，请你分别在IE和Firefox中分别查看你的页面，以便保证页面
-对浏览器的兼容性。
-3：请你随时关注官方网站。以便获得最新的通知和说明
-时间：2008-1-30
-作者：杨正祎
-**************************************************/
-
-/**************************************************
 第一部分：所有的模板都使用的公共样式。公告样式是为了更好的向前和向后兼容。
 如果不符合你皮肤的要求，你可以在后面通过更高的优先级覆盖着这些样式，但是
 你不能删除这些样式。
@@ -48,7 +36,7 @@ html {
 body {
 	color: #000;
 	background: #FFF;
-	font-family: "verdana","ms song","宋体","Arial","微软雅黑", "Helvetica", "sans-serif";
+	font-family: "verdana","ms song","Arial","微软雅黑","Helvetica","宋体","sans-serif";
 	font-size: 9pt;
 	min-height: 101%;
 }
@@ -68,6 +56,9 @@ li {
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
 	font-weight: normal;
+}
+textarea{
+	resize: none;
 }
 a:link {
 	color: black;
@@ -102,61 +93,78 @@ a:active {
 	min-width: 930px;
 }
 #header {
-	border-top: 4px solid black;
-	border-bottom: 1px solid black;
-	padding-bottom: 5px;
+	/*border-top: 4px solid black;*/
+	/*border-bottom: 1px solid black;*/
+	/*padding-bottom: 5px;*/
 	margin-top: 10px;
 }
 #blogTitle {
+	/*clear: both;*/
 	height: 60px;
-	clear: both;
+	margin-top: 50px;
 }
 #blogTitle h1 {
-	font-size: 150%;
+	/*margin-left: 1em;*/
+	/*margin-top: 10px;*/
+	/*width: 50%;*/
+	/*float: left;*/
+	font-size: 200%;
 	font-weight: bold;
 	line-height: 1.5em;
-	margin-left: 1em;
-	margin-top: 10px;
-	width: 50%;
-	float: left;
+	text-align: center;
+}
+#blogTitle h1 a {
+	background-color: #F7F3EE;
+	padding: 8px 1em;
+	color: #948C76;
 }
 #blogTitle h2 {
-	margin-left: 4em;
+	/*width: 50%;*/
+	/*float: left;*/
+	/*margin-left: 4em;*/
 	line-height: 1.5em;
-	width: 50%;
-	float: left;
+	text-align: center;
+	color: #b7af97;
+	margin-top: 10px;
 }
 #blogLogo {
-	float: right;
+	/*float: right;*/
 }
 #navigator {
-	background-color: black;
+	/*background-color: black;*/
+	/*clear: both;*/
 	height: 30px;
-	clear: both;
+	margin-top: 50px;
 }
 #navList {
+	/*float: left;*/
 	min-height: 30px;
-	float: left;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 0;
 }
 #navList li {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
+	font-size: 9pt;
 }
 #navList a {
+	/*width: 5em;*/
+	/*float: left;*/
+	/*padding-top: 8px;*/
+	/*border-right: 1px solid #ccc;*/
 	display: block;
-	width: 5em;
 	height: 22px;
-	float: left;
 	text-align: center;
-	padding-top: 8px;
-	border-right: 1px solid #ccc;
+	padding: 0 1em;
 }
 #navList a:link, #navList a:visited, #navList a:active {
-	color: #ccc;
+	color: #948C76;
 }
 #navList a:hover {
-	color: white;
-	background-color: #F60;
-	text-decoration: none;
+	/*color: white;*/
+	/*background-color: #F60;*/
+	text-decoration: underline;
 }
 
 .blogStats {
@@ -165,102 +173,122 @@ a:active {
 	margin-top: 8px;
 	margin-right: 2px;
 	text-align: right;
+	display: none;
 }
 /*****home和头部结束**************************/
 
 /*****主页文章列表开始**************************/
 #main{
-	width: 100%;
-	min-width: 950px;
-	text-align: left;
+	/*width: 100%;*/
+	/*text-align: left;*/
+	width: 800px;
+	margin: 20px auto;
 }
 #mainContent .forFlow{
-	margin-left: 22em;
-	float: none; 
-	width: auto;
+	/*float: none; */
+	/*width: auto;*/
+	/*margin-left: 130px;*/
 }
 
 #mainContent {
+	/*float: right;*/
+	/*margin-left: -25em;*/
 	min-height: 200px;
-	padding: 0px 0px 10px 0;
+	padding: 0 0 10px 0;
 	*padding-top:10px;
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	word-break: break-all;
-	
-	float: right;
-	margin-left: -25em;
 	width: 100%
 }
 .day {
 	min-height: 10px;
 	_height: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	padding-bottom: 5px;
 }
 .dayTitle {
-	width: 100%;
-	color: #666;
-
+	/*margin-top: 3px;*/
+	/*margin-bottom: 20px;*/
+	/*clear:both;*/
+	/*border-bottom: 2px solid #666;*/
+	width: 140px;
+	color: #948C76;
+	background-color: #F7F3EE;
 	font-weight: bold;
 	line-height: 1.5em;
 	font-size: 110%;
-	margin-top: 3px;
-	margin-bottom: 10px;
-
-	clear:both;
-	border-bottom: 2px solid #666;
 	text-align:center;
-
+	vertical-align: middle;
+	position: relative;
+	padding: 5px 1em 5px 0;
+}
+.dayTitle:before {
+	content: "";
+	display: inline-block;
+	border-right: 15px solid #F7F3EE;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	vertical-align: middle;
+	position: absolute;
+	left: -15px;
+	top: 0;
+}
+.dayTitle a:link,.dayTitle a:visited,.dayTitle a:active{
+	color: #948C76;
 }
 .postTitle {
-	font-size: 110%;
-	font-weight: bold;
-	border-bottom: 1px solid #666;
-	float: right;
+	/*border-bottom: 1px solid #666;*/
+	/*float: right;*/
+	/*clear:both;*/
+	font-size: 150%;
 	line-height: 1.5em;
 	width: 100%;
-	clear:both;
+	margin-top: 20px;
 }
 .postTitle a:link, .postTitle a:visited, .postTitle a:active {
 	color: #444;
 }
 .postTitle a:hover {
-	color: #F60;
-	text-decoration: none;
+	/*color: #F60;*/
+	text-decoration: underline;
 }
 .postCon {
-	float: right;
+	/*float: right;*/
+	/*clear:both;*/
 	line-height: 1.5em;
 	width: 100%;
-	clear:both;
 	padding: 10px 0;
+	color: #787978;
 }
 .postDesc {
-	float: right;
+	/*float: right;*/
+	/*clear:both;*/
+	/*padding-right: 5px;*/
+	/*margin-top: 5px;*/
 	width: 100%;
-	clear:both;
-	text-align: right;
-	padding-right: 5px;
-	color: #666;
-	margin-top: 5px;
+	text-align: left;
+	color: #787978;
 }
 .postDesc a:link, .postDesc a:visited, .postDesc a:active {
 	color: #666;
 }
 .postDesc a:hover {
-	color: #F60;
-	text-decoration: none;
+	/*color: #F60;*/
+	text-decoration: underline;
 }
 .postSeparator {
-	clear: both;
+	/*clear: both;*/
+	/*border-top: 1px dotted #666;*/
+	/*clear:both;*/
+	/*float: right;*/
 	height: 1px;
-	border-top: 1px dotted #666;
 	width: 100%;
-	clear:both;
-	float: right;
-	margin: 0 auto 15px auto;
+	margin: 0 auto 40px auto;
+}
+.topicListFooter a {
+	color: #999;
 }
 /*****主页文章列表开始**************************/
 
@@ -268,18 +296,19 @@ a:active {
 #sideBar {
 	width: 230px;
 	min-height: 200px;
-	padding: 0px 0 0px 5px;
+	padding: 0 0 0 5px;
 	float: left;
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	word-break: break-all;
+	/*display: none;*/
 }
 .newsItem .catListTitle {
 	display: none;
 }
 .newsItem {
-	padding: 15px 0 5px 0px;
+	padding: 15px 0 5px 0;
 	margin-bottom: 8px;
 }
 /**日历控件样式开始**/
@@ -345,18 +374,19 @@ a:active {
 #topics {
 	width: 100%;
 	min-height: 200px;
-	padding: 0px 0px 10px 0;
-	float: left;
+	padding: 0 0 10px 0;
+	/*float: left;*/
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	word-break: break-all;
 }
 #topics .postTitle {
-	font-size: 130%;
+	font-size: 180%;
 	font-weight: bold;
-	border-bottom: 1px solid #999;
-	float: left;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	/*float: left;*/
 	line-height: 1.5em;
 	width: 100%;
 	padding-left: 5px;
@@ -365,7 +395,7 @@ a:active {
 	padding: 5px 2px 5px 5px;
 	line-height: 1.5em;
 	color: #000;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #eee;
 }
 #EntryTag {
 	color: #666;
@@ -395,8 +425,8 @@ a:active {
 	padding-left: 8px;
 }
 .louzhu {
-background:transparent url('images/icoLouZhu.gif') no-repeat scroll right top;
-padding-right:16px;
+	background:transparent url('images/icoLouZhu.gif') no-repeat scroll right top;
+	padding-right:16px;
 }
 .feedbackListSubtitle {
 	color: #666;
@@ -416,7 +446,7 @@ padding-right:16px;
 }
 .feedbackCon {
 	border-bottom: 1px solid #ccc;
-	background: url('images/comment.gif') no-repeat 5px 0px;
+	background: url('images/comment.gif') no-repeat 5px 0;
 	padding: 15px 18px 10px 40px;
 	min-height: 35px;
 	_height: 35px;
@@ -430,6 +460,147 @@ padding-right:16px;
 }
 .commenttb {
 	width: 320px;
+}
+
+#blog_post_info{
+	text-align: center;
+}
+
+#green_channel{
+	border: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+#green_channel a{
+	background: none;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 10px;
+	font-size: 16px;
+	opacity: 0.8;
+	padding: 0;
+}
+
+#green_channel a:hover{
+	background: none;
+	opacity: 1;
+}
+
+#div_digg{
+	width: auto;
+	display: inline-block;
+	padding: 10px 0;
+	margin: 30px 0;
+	vertical-align: middle;
+	float: none;
+}
+
+.diggit,.buryit{
+	font-weight: bold;
+	font-size: 16px;
+	background-size: 0;
+	background: #2daebf;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 10px;
+	padding: 0;
+	float: none;
+	display: inline-block;
+	border-radius: 10px;
+	opacity: 0.8;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	-ms-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.diggit span,.buryit span{
+	color: #fff;
+}
+
+.buryit{
+	background: #4f556d;
+}
+
+.diggit:before{
+	content: "赞一个";
+	display: inline-block;
+	color: #fff;
+}
+
+.buryit:before{
+	content: "踩一下";
+	display: inline-block;
+	color: #fff;
+}
+
+#green_channel #green_channel_weibo,#green_channel #green_channel_wechat,#comment_nav,#author_profile,#BlogPostCategory,#digg_tips{
+	display: none;
+}
+.commentform{
+	margin-top: 100px;
+}
+#commentform_title{
+	background: none;
+	border-bottom: 1px solid #eee;
+	font-size: 180%;
+	padding: 0;
+	color: #444;
+}
+div.commentform textarea{
+	width: 98%;
+	height: 300px;
+	outline: none;
+}
+div.commentform input.author,div.commentform input.email,div.commentform input.url{
+	background: none;
+}
+div.commentform input.author,div.commentform textarea.comment_textarea{
+	padding: 4px;
+}
+div.commentform textarea.comment_textarea{
+	border: 1px solid #eee;
+}
+div.commentform textarea.comment_textarea:hover{
+	border: 1px solid #333;
+	-webkit-transition: border 1s;
+	transition: border 1s;
+}
+div.commentform input.author{
+	border: none;
+	border-bottom: 1px solid #eee;
+}
+div.commentbox_main{
+	margin-top: 20px;
+}
+div.commentbox_title_left{
+	font-size: 16px;
+}
+div.commentform p{
+	line-height: 40px;
+	font-size: 16px;
+}
+#commentbox_opt a{
+	font-size: 10px;
+}
+#comment_form_container p:nth-last-of-type(1){
+	font-size: 10px;
+	line-height: 1;
+}
+#btn_comment_submit{
+	background: #777;
+	border: none;
+	outline: none;
+	color: #fff;
+}
+.login_tips{
+	background: none;
+	padding: 0;
 }
 /****查看文章页面开始*************************/
 
@@ -515,7 +686,6 @@ padding-right:16px;
 .postDesc2 {
 	color: #666;
 	float: right;
-	margin-right: ;
 }
 .postText2 {
 	clear: both;
@@ -588,10 +758,11 @@ padding-right:16px;
 	text-align: center;
 	min-height: 15px;
 	_height: 15px;
-	border-top: 1px solid black;
+	/*border-top: 1px solid black;*/
 	margin-top: 10px;
 	padding-top: 10px;
 	margin-bottom: 10px;
+	color: #999;
 }
 /*留言查看页面的个人信息*/
 .personInfo {
@@ -614,40 +785,43 @@ padding-right:16px;
 /*文章内部常用标签格式*/
 .postBody {
 	line-height: 1.5em;
+	color: #444;
 }
 .postBody p,.postCon  p{
 	text-indent: 2em;
 	margin: 0 auto 1em auto;
 }
 .postBody h2{
-	font-size: 150%;
+	font-size: 150% !important;
 	margin: 15px auto 2px auto;
 	font-weight:bold;
 }
 .postBody h3 {
-	font-size: 120%;
+	font-size: 120% !important;
 	margin: 15px auto 2px auto;
 	font-weight:bold;
 }
 .postBody h4{
-	font-size:110%;
+	font-size:110% !important;
 	margin:15px auto 2px auto;
 	font-weight:bold;
-	color:#333;
 }
 
 .postBody h5{
-	font-size:100%;
+	font-size:100% !important;
 	margin:15px auto 2px auto;
 	font-weight:bold;
-	color:#333;
 }
 
 .postBody a:link,.postBody a:visited,.postBody a:active{
 	text-decoration:underline;
 }
 .postCon a:link,.postCon a:visited,.postCon a:active{
+	color: #787978;
 	text-decoration:underline;
+}
+.postCon a:hover{
+	color: #000;
 }
 .postBody ul,.postCon ul{
 	margin-left:2em;	
@@ -659,13 +833,29 @@ padding-right:16px;
 }
 
 .postBody blockquote{
-	background:url('images/comment.gif')) no-repeat 25px 0px;
-	padding:10px 60px 5px 60px;
+	/*background:url('images/comment.gif')) no-repeat 25px 0px;*/
+	padding:10px 0 5px 20px;
 	min-height:35px;
 	_height:35px;
 	line-height:1.6em;
 	color:#333;
+	border-left: 6px solid #eee;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 0;
+	margin-left: 10px;
+}
+.postBody table{
+	width: 100% !important;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 /*****第四部分结束*******************************/
 
-
+/*自定义部分*/
+#site_nav_under,#opt_under_post,#google_ad_c1,#under_post_news,#google_ad_c2,#under_post_kb{
+	display: none !important;
+}
+.btn_submit{
+	background: #2e7cbf !important;
+}
