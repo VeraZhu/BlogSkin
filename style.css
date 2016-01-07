@@ -417,6 +417,9 @@ a:active {
 	color: #666;
 	margin-top: 5px;
 }
+#cnblogs_post_body p{
+	font-size: 14px;
+}
 .feedback_area_title {
 	font-weight: bold;
 	margin-top: 20px;
