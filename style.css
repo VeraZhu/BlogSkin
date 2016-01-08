@@ -93,21 +93,13 @@ a:active {
 	min-width: 930px;
 }
 #header {
-	/*border-top: 4px solid black;*/
-	/*border-bottom: 1px solid black;*/
-	/*padding-bottom: 5px;*/
 	margin-top: 10px;
 }
 #blogTitle {
-	/*clear: both;*/
 	height: 60px;
 	margin-top: 50px;
 }
 #blogTitle h1 {
-	/*margin-left: 1em;*/
-	/*margin-top: 10px;*/
-	/*width: 50%;*/
-	/*float: left;*/
 	font-size: 200%;
 	font-weight: bold;
 	line-height: 1.5em;
@@ -119,40 +111,28 @@ a:active {
 	color: #948C76;
 }
 #blogTitle h2 {
-	/*width: 50%;*/
-	/*float: left;*/
-	/*margin-left: 4em;*/
 	line-height: 1.5em;
 	text-align: center;
 	color: #b7af97;
 	margin-top: 10px;
 }
 #blogLogo {
-	/*float: right;*/
 }
 #navigator {
-	/*background-color: black;*/
-	/*clear: both;*/
 	height: 30px;
 	margin-top: 50px;
 }
 #navList {
-	/*float: left;*/
 	min-height: 30px;
 	text-align: center;
 	margin: 0 auto;
 	font-size: 0;
 }
 #navList li {
-	/*float: left;*/
 	display: inline-block;
 	font-size: 9pt;
 }
 #navList a {
-	/*width: 5em;*/
-	/*float: left;*/
-	/*padding-top: 8px;*/
-	/*border-right: 1px solid #ccc;*/
 	display: block;
 	height: 22px;
 	text-align: center;
@@ -162,8 +142,6 @@ a:active {
 	color: #948C76;
 }
 #navList a:hover {
-	/*color: white;*/
-	/*background-color: #F60;*/
 	text-decoration: underline;
 }
 
@@ -179,20 +157,13 @@ a:active {
 
 /*****主页文章列表开始**************************/
 #main{
-	/*width: 100%;*/
-	/*text-align: left;*/
 	width: 800px;
 	margin: 20px auto;
 }
 #mainContent .forFlow{
-	/*float: none; */
-	/*width: auto;*/
-	/*margin-left: 130px;*/
 }
 
 #mainContent {
-	/*float: right;*/
-	/*margin-left: -25em;*/
 	min-height: 200px;
 	padding: 0 0 10px 0;
 	*padding-top:10px;
@@ -209,10 +180,6 @@ a:active {
 	padding-bottom: 5px;
 }
 .dayTitle {
-	/*margin-top: 3px;*/
-	/*margin-bottom: 20px;*/
-	/*clear:both;*/
-	/*border-bottom: 2px solid #666;*/
 	width: 140px;
 	color: #948C76;
 	background-color: #F7F3EE;
@@ -239,9 +206,6 @@ a:active {
 	color: #948C76;
 }
 .postTitle {
-	/*border-bottom: 1px solid #666;*/
-	/*float: right;*/
-	/*clear:both;*/
 	font-size: 150%;
 	line-height: 1.5em;
 	width: 100%;
@@ -251,22 +215,15 @@ a:active {
 	color: #444;
 }
 .postTitle a:hover {
-	/*color: #F60;*/
 	text-decoration: underline;
 }
 .postCon {
-	/*float: right;*/
-	/*clear:both;*/
 	line-height: 1.5em;
 	width: 100%;
 	padding: 10px 0;
 	color: #787978;
 }
 .postDesc {
-	/*float: right;*/
-	/*clear:both;*/
-	/*padding-right: 5px;*/
-	/*margin-top: 5px;*/
 	width: 100%;
 	text-align: left;
 	color: #787978;
@@ -275,14 +232,9 @@ a:active {
 	color: #666;
 }
 .postDesc a:hover {
-	/*color: #F60;*/
 	text-decoration: underline;
 }
 .postSeparator {
-	/*clear: both;*/
-	/*border-top: 1px dotted #666;*/
-	/*clear:both;*/
-	/*float: right;*/
 	height: 1px;
 	width: 100%;
 	margin: 0 auto 40px auto;
@@ -302,7 +254,6 @@ a:active {
 	text-overflow: ellipsis;
 	overflow: hidden;
 	word-break: break-all;
-	/*display: none;*/
 }
 .newsItem .catListTitle {
 	display: none;
@@ -375,7 +326,6 @@ a:active {
 	width: 100%;
 	min-height: 200px;
 	padding: 0 0 10px 0;
-	/*float: left;*/
 	-o-text-overflow: ellipsis;
 	text-overflow: ellipsis;
 	overflow: hidden;
@@ -386,7 +336,6 @@ a:active {
 	font-weight: bold;
 	text-align: center;
 	border-bottom: 1px solid #eee;
-	/*float: left;*/
 	line-height: 1.5em;
 	width: 100%;
 	padding-left: 5px;
@@ -473,48 +422,65 @@ a:active {
 	border: none;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	vertical-align: middle;
+	text-align: left;
 }
 #green_channel a{
 	background: none;
-	width: 100px;
-	height: 50px;
-	line-height: 50px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
 	margin: 0 10px;
-	font-size: 16px;
+	font-size: 14px;
 	opacity: 0.8;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	border-radius: 0;
 	padding: 0;
+	text-align: center;
 }
 
 #green_channel a:hover{
 	background: none;
 	opacity: 1;
 }
+#green_channel span{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+	font-size: 14px;
+	text-align: center;
+}
+.diggit:hover,.buryit:hover{
+	opacity: 1;
+}
 
 #div_digg{
-	width: auto;
+	width: 100%;
 	display: inline-block;
 	padding: 10px 0;
 	margin: 30px 0;
 	vertical-align: middle;
 	float: none;
+	text-align: right;
 }
 
 .diggit,.buryit{
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
 	background-size: 0;
-	background: #2daebf;
-	width: 100px;
-	height: 50px;
-	line-height: 50px;
+	background: #e33100;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
 	margin: 0 10px;
 	padding: 0;
 	float: none;
 	display: inline-block;
-	border-radius: 10px;
 	opacity: 0.8;
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -542,7 +508,16 @@ a:active {
 	color: #fff;
 }
 
-#green_channel #green_channel_weibo,#green_channel #green_channel_wechat,#comment_nav,#author_profile,#BlogPostCategory,#digg_tips{
+#author_profile{
+	float: none;
+}
+
+#author_profile_follow{
+	text-align: left;
+	padding-left: 57px;
+}
+
+#comment_nav,#BlogPostCategory,#digg_tips{
 	display: none;
 }
 .commentform{
@@ -604,6 +579,12 @@ div.commentform p{
 .login_tips{
 	background: none;
 	padding: 0;
+}
+.commentbox_title{
+	width: 100%;
+}
+.commentbox_title_right{
+	margin-right: 10px;
 }
 /****查看文章页面开始*************************/
 
@@ -761,7 +742,6 @@ div.commentform p{
 	text-align: center;
 	min-height: 15px;
 	_height: 15px;
-	/*border-top: 1px solid black;*/
 	margin-top: 10px;
 	padding-top: 10px;
 	margin-bottom: 10px;
@@ -836,7 +816,6 @@ div.commentform p{
 }
 
 .postBody blockquote{
-	/*background:url('images/comment.gif')) no-repeat 25px 0px;*/
 	padding:10px 0 5px 20px;
 	min-height:35px;
 	_height:35px;
